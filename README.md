@@ -72,7 +72,7 @@ The main use case of this project is to overcome payment api unavailability and 
 4. So you can verify that who send the money to you.
 
 ### IMPORTANT
-They telebirr receipt website may be modified or changed at anytime so it is important to test HTML parser every time before letting users to pay and before verifying.
+The telebirr receipt website may be modified or changed at anytime so it is important to test HTML parser every time before letting users to pay and before verifying.
 You could test the parser simply by hard coding a sample transaction information manually and matching it with parsed from url.
 
 ### DISCLAIMER
