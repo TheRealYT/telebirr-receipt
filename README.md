@@ -71,7 +71,7 @@ The main use case of this project is to overcome payment api unavailability and 
 3. You let your customers know how to verify their payment by entering their transaction number or link which is received from 127 / telebirr SMS.
 4. So you can verify that who send the money to you.
 
-### Disclaimer
+### DISCLAIMER
 
 The open-source code provided is offered "as is" without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The author of this code shall not be liable for any damages arising from the use of this code, including, but not limited to, direct, indirect, incidental, special, or consequential damages. 
 
