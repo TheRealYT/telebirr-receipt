@@ -2,6 +2,7 @@
   "name": "telebirr-receipt",
   "description": "Telebirr transaction receipt parser and verifier",
   "version": "1.0.0",
+  "author": "Yonathan Tesfaye <yt040448@gmail.com>",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -15,13 +16,10 @@
     "parse",
     "transaction"
   ],
-  "author": {
-    "name": "Yonathan Tesfaye",
-    "email": "yt040448@gmail.com"
-  },
   "license": "Apache-2.0",
   "repository": {
-    "url": "https://github.com/TheRealYT/telebirr-receipt"
+    "type": "git",
+    "url": "git://github.com/TheRealYT/telebirr-receipt.git"
   },
   "files": [
     "README.md",
