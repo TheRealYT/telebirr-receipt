@@ -26,9 +26,8 @@
   "files": [
     "README.md",
     "LICENSE",
-    "index.js",
     "package.json",
-    "package-lock.json"
+    "index.js"
   ],
   "dependencies": {
     "htmlparser2": "^9.0.0"
