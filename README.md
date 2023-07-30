@@ -22,13 +22,13 @@ npm install telebirr-receipt
 ```javascript
 const {receipt, utils: {loadReceipt, parseFromHTML}} = require('telebirr-receipt')
 
-// for debugging only security warning
+// use it with caution / security warning
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-// TODO: replace `receipt_no`
-loadReceipt({receipt_no: "ADQ..."}).then(htmlAsString => {
-    const {verify, verifyOnly, verifyAll, equals} = receipt(parseFromHTML(htmlAsString), {to: "Someone"})
-    verify((parsed_fields, pre_defined_fields) => {
+// TODO: replace `receiptNo`
+loadReceipt({receiptNo: 'ADQ...'}).then(htmlAsString => {
+    const {verify, verifyOnly, verifyAll, equals} = receipt(parseFromHTML(htmlAsString), {to: 'Someone'})
+    verify((parsedFields, preDefinedFields) => {
         // do anything with receipt
     })
 }).catch(reason => {
@@ -41,7 +41,7 @@ loadReceipt({receipt_no: "ADQ..."}).then(htmlAsString => {
 #### Using custom receipt parser with custom string source
 
 ```javascript
-const {receipt} = require("telebirr-receipt");
+const {receipt} = require('telebirr-receipt');
 
 function parse() {
     const source = 'payer_name=Abebe;amount=5000;to=Kebede'
@@ -58,7 +58,7 @@ function parse() {
 const {verifyAll, verify, equals} = receipt(parse(), {to: 'Kebede', amount: '5000'})
 
 // match expected receiver's name with the name found on receipt
-console.log(verify((parsed_info, my_info) => equals(parsed_info?.to, my_info?.to)))
+console.log(verify((parsedInfo, myInfo) => equals(parsedInfo?.to, myInfo?.to))) // match any field
 
 console.log(verifyAll(['payer_name'])) // match every field but `payer_name`
 ```
