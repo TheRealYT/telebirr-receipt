@@ -81,6 +81,16 @@ before letting users pay and before verifying.
 You could test the parser simply by hard coding a sample transaction information manually and matching it with parsed
 from url.
 
+### Known issues
+
+1. `loadReceipt` fails with error: `unable to verify the first certificate`, code: `UNABLE_TO_VERIFY_LEAF_SIGNATURE`.
+   Disabling certificate verification could fix the problem, but it is not recommended.
+   Let me know if there is good solution to this problem.
+2. `parseFromHTML` may return different receipt field values or even empty and omit field values because of
+   the variability of the receipt website based on transaction such as transferring to bank and direct telebirr
+   transferring have different receipt format and soon. Thus, you should take a look at the return data of the
+   function `parseFromHTML` for different transaction destinations.
+
 ### DISCLAIMER
 
 The open-source code provided is offered "as is" without warranty of any kind, either express or implied, including, but
