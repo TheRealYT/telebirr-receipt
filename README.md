@@ -11,9 +11,9 @@ transaction SMS or the full receipt url is also sent via SMS.
 
 ### How to install
 
-``
+```
 npm install telebirr-receipt
-``
+```
 
 ### Basic usage
 
